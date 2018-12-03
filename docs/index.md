@@ -15,4 +15,4 @@ Because the database only contains 20,580 images, it only provides ~150-200 imag
 <br>[click here for more about EDA](EDA.md)
 
 ## Model Specifications and Performance
-[click here for more about modles](model.md)
+<br>[click here for more about models](model.md)
