@@ -5,6 +5,7 @@ EDA
 
 - Because the database only contains 20,580 images, it only provides ~150-200 images per breed. We will have to explore data augmentation techniques and different classification techniques. 
 ![breed classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_breeds.png)
+## Possible solutions
 To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. There are a wide variety of dogs that qualify as terrier dogs. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/)
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_class.png)
 
