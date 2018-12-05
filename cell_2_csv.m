@@ -1,8 +1,8 @@
 clc
 clear all
-load('test_list.mat')
+load('train_list.mat')
 
-cell2csv('test',[file_list,num2cell(labels)])
+cell2csv('train',[file_list,num2cell(labels)])
 
 function cell2csv(filename,cellArray,delimiter)
 % Writes cell array content into a *.csv file.
