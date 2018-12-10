@@ -6,8 +6,7 @@ The images come in different shapes and can be color or black and white. We will
 
 Because the database only contains 20,580 images, it only provides ~150-200 images per breed. We will have to explore data augmentation techniques and different classification techniques. 
 ![breed classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_breeds.png)
-
-#Size Distribution for all images
+ 
 The following plot shows the distribution of image size ratio (height/width). The range of the size ratio is from 0.4-2.0 with most images having ratios above or below 1. These wide ranges of height and width imply that rescaling all the images to a size of 250x250 could possibly lose the dog.
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_size.png)
 
@@ -16,7 +15,7 @@ The following plot shows the distribution of image size ratio (height/width). Th
 To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. There are a wide variety of dogs that qualify as terrier dogs. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/)
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_class.png)
 
-#Size Distribution per Breed
-After classifying per breed we decided to analyze how the image distribution compared with each other. The results below show that ..
+
+After classifying per breed we decided to use annotation to find the location of the dog in each image. The following results show the distribution size ratio of (height/width) of the location per breed. 
 
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/annotated_fig_ratio.png)
