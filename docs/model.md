@@ -15,7 +15,7 @@ From this model we were able to get the the following results:
 
 ResNet50
 ----------
-For this project we specifically looked at ResNET (Residual Neural Network) for our CNN model. We used ResNET50 found Keras, the open-source neural network library. This ResNET follows the architechture by He et al. found ![here](https://arxiv.org/abs/1512.03385)
+For this project we specifically looked at ResNET (Residual Neural Network) for our CNN model. We used ResNET50 found Keras, the open-source neural network library. This ResNET follows the architechture by He et al. found [here](https://arxiv.org/abs/1512.03385)
 
 
 
