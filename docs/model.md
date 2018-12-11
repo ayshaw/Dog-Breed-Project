@@ -15,7 +15,18 @@ From this model we were able to get the the following results:
 
 ResNet50
 ----------
-For this project we specifically looked at ResNET (Residual Neural Network) for our CNN model. We used ResNET50 found Keras, the open-source neural network library. This ResNET follows the architechture by He et al. found [here](https://arxiv.org/abs/1512.03385)
+For this project we specifically looked at ResNET (Residual Neural Network) for our CNN model. ResNETs are a type of deep residual learning architecture commonly used for image recognition that facilitates the training od deeper networks. We used ResNET50 found Keras, the open-source neural network library. This ResNET follows the architechture by He et al. (2015) found [here](https://arxiv.org/abs/1512.03385)
+
+Reference:
+He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).
+
+
+Description of ResNET model: 
+
+
+From this model we were able to get the the following results:
+
+
 
 
 
