@@ -16,6 +16,6 @@ To get more images per class, we use breed classes instead of breeds to classify
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_class.png)
 
 
-After classifying per breed we decided to use annotation to find the location of the dog in each image. The following results show the distribution size ratio of (height/width) of the location per breed. 
+After classifying per breed we decided to use annotation to find the location of the dog in each image. The following results show the distribution size ratio of (height/width) of the location the dog in each image per breed. For each breed we have right-skewed distributions. The results show that for the eight classification breeds most of the dogs are centered (the 1.0 ratio is the most freqent per breed). The size ratio higher/lower than 1.0 showed us that we would be cropping part of the dog when we scaled the images. 
 
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/annotated_fig_ratio.png)
