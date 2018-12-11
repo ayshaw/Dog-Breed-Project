@@ -12,7 +12,7 @@ The following plot shows the distribution of image size ratio (height/width). Th
 
 
 ## Possible solutions
-To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. There are a wide variety of dogs that qualify as terrier dogs. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/)
+To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/)
 ![breed class classification image](https://github.com/ayshaw/Dog-Breed-Project/blob/master/distribution_class.png)
 
 
