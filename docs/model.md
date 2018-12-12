@@ -45,6 +45,8 @@ The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node 
 
 ![Edited baseline model description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1.png "Edited Baseline Model")
 
+The parameters are reduced to 812,000 and the training time is 15 minutes instead of 30. The overtraining is greatly reduced as well.
+
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
 
 
