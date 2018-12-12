@@ -21,6 +21,10 @@ We explored multiple models for the classification of the 8 American Kennel Club
 
 <br>[click here for more about the prepocessing steps, models and performance](model.md)
 
+## Conclusions
+The model that performed the best on the dataset was the      model. 
+
+
 ## Python code
 The links to the python code are the following:
 [EDA]
