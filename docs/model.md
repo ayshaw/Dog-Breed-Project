@@ -27,8 +27,8 @@ From this model we were able to get the the following results:
 
 The table below shows the models used for this project and the results on the train and test sets. 
 
-Model Description  Train Set Accuracy   Test Set Accuracy 
------------------  -------------------  ------------------
+**Model Description**       **Train Set Accuracy**       **Test Set Accuracy **
+---------------------       ----------------------       ----------------------
 
 
 
