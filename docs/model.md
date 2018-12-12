@@ -5,14 +5,14 @@ Preprocessing Data
 ------------
 Steps taken: 
 1. Grouped the breeds into 10 breed classes
-2. Created a dataframe that stored all image annotations (Annotation had image bounds of dog within image), image locations, test or train (taken from Stanford dogs dataset website), classification of breed and breed class (American Kennel Club)
+2. Created a dataframe that stored all image annotations (annotation had image bounds of dog within image), image locations, test or train (taken from Stanford dogs dataset website), classification of breed and breed class (American Kennel Club)
 3. Cropped all dog pictures with respect with annotation.
 4. Resized the image (keeping aspect ratio) so largest dimension (width or height) is 250 pixels long. Added padding such that the image size would be 250x250 pixels for all images. Saved out images into folder called Images_scaled that had the same file structure as Images (each folder represents a breed)
 5. Looped through dataframe in step 1 to generate image arrays (1000 images each) and save them out into npy files (did this to minimize ram usage)
-6. combined all scaled images into one x_train array
-7. divded the x_train,x_test array by 255 when we realized that relu was meant for values from 0 to 1. Switched to float16 to prevent RAM overflow.
-8. Changed previous BGR to RGB using cv2 package
-9. made y_test,y_train by putting their 10 classes to categorical
+6. Combined all scaled images into one x_train array.
+7. Divdied the x_train,x_test array by 255 when we realized that relu was meant for values from 0 to 1. Switched to float16 to prevent RAM overflow.
+8. Changed previous BGR to RGB using cv2 package.
+9. Made y_test,y_train by putting their 10 classes to categorical
 
 
 
@@ -42,6 +42,7 @@ The table below shows the models used for this project and the results on the tr
 The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets.
 ## Edited Baseline Model version 1
 The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node dense overfitting layer that contributed to its 40 minute training time. Additionally its learning rate was 0.1, which may have lead to the non-decrease of the loss function. I decreased the learning rate to 0.01. I further reduced the parameters by increasing the max pooling rate layers, choosing to add one in between each Conv2D layer instead of every 2 Conv2D layer.
+
 ![Edited baseline model description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_model.png "Edited Baseline Model")
 
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
