@@ -25,6 +25,14 @@ From this model we were able to get the the following results:
 
 
 
+The table below shows the models used for this project and the results on the train and test sets. 
+
+Model Description  Train Set Accuracy   Test Set Accuracy 
+-----------------  -------------------  ------------------
+
+
+
+
 Reference:
 He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).
 
