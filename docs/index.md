@@ -14,7 +14,7 @@ We will do this by using a training set of 20,580 dogs of 120 breeds in the [Sta
 The images come in different shapes and can be color or black and white. We reshape the images to be 250x250 pixels, because some of the models need consistent image size. For certain images, compressing or expanding some of the images to fit the 250x250 pixels leads to loss of features we need to classify the dogs by breeds. <br>
 Because the database only contains 20,580 images, it only provides ~150-200 images per breed. We explore data augmentation techniques and different classification techniques. Because of the low amount of images per breed and thus possibly insufficient data for effective training, we decided to coagulate [120 breeds into 8 American Kennel Club breed classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/). 
 
-<br>[click here for more about EDA](EDA.md)
+<br>[click here for more about EDA and Data Augmentation](EDA.md)
 
 ## Model Specifications and Performance
 <br>[click here for more about models](model.md)
