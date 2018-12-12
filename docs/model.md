@@ -4,7 +4,10 @@ Preprocessing Data, Explored Models and Performance
 Preprocessing Data
 ------------
 Steps taken: 
+1. Cropped all dog pictures with respect with annotation from Stanford Dog Dataset. Annotation shed bounds of dog location in the image. 
 
+2. Took largest dimension and resized the image such that that dimension was 250x250.
+Resized images to 250x250 and adding padding 
 
 
 
