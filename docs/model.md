@@ -43,7 +43,7 @@ The training and validation accuracy versus epochs are shown in the figure below
 ## Edited Baseline Model version 1
 The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node dense overfitting layer that contributed to its 40 minute training time. Additionally its learning rate was 0.1, which may have lead to the non-decrease of the loss function. I decreased the learning rate to 0.01. I further reduced the parameters by increasing the max pooling rate layers, choosing to add one in between each Conv2D layer instead of every 2 Conv2D layer.
 
-![Edited baseline model description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_model.png "Edited Baseline Model")
+![Edited baseline model description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1.png "Edited Baseline Model")
 
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
 
