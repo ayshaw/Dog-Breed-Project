@@ -27,13 +27,14 @@ We examine the diversity of breeds per breed class. A high breed diversity in a 
 
 After classifying the breeds into super breeds we were left with 8 breeds classes with at least 700 dogs per super breed class. In order to get more images to train our neural network model we decided to do data augmentation using ImageDataGenerator from keras. This image preprocessing technique makes minor edits to the original images by doing rotations, translations, or flipping the original dataset which leads to the neural network model took at the most important features per class breed. For this project we did the following alterations:
 
-datagen = ImageDataGenerator(
-    featurewise_center=True,
-    featurewise_std_normalization=True,
-    rotation_range=20,
-    width_shift_range=0.2,
-    height_shift_range=0.2,
-    horizontal_flip=True)
+
+    datagen = ImageDataGenerator(
+        featurewise_center=True,
+        featurewise_std_normalization=True,
+        rotation_range=20,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        horizontal_flip=True)
     
 This function set the input mean to 0 over the dataset, normalized the data by dividing by the input std, has a 20° range for random rotations, specified a range of 20% of the pixels to be shifted by width and by height, and allows inputs to be randomly flipped horizontally. 
 
