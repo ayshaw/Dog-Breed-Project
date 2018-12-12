@@ -12,7 +12,7 @@ The following plot shows the distribution of image size ratio (height/width). Th
 
 
 ## Possible solutions
-To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/)
+To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/). The hybrid and NAN classes were created for the dogs that could not be classified in the 8 super breeds. 
 ![breed class distribution image](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/distribution_class.png)
 
 
