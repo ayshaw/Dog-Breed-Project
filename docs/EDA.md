@@ -20,7 +20,7 @@ After classifying per breed we decided to use annotation to find the location of
 
 ![breed class annotation ratio image](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/annotated_fig_ratio.png)
 
-We examine the diversity of breeds per breed class. A high breed diversity in a breed class can complicate the classification because the neural net has to find similarities throughout a wide range of breeds in that class. Besides FSS and NAN, the breeds all share some traits that group it into an AKC breed class. [] has the most variety per class we want to examine if when we train our Neural Network, if it will also show the greatest error.
+We examine the diversity of breeds per breed class. A high breed diversity in a breed class can complicate the classification because the neural net has to find similarities throughout a wide range of breeds in that class. Besides FSS and NAN, the breeds all share some traits that group it into an AKC breed class. The Terrier, Sporting, and Hound super breeds had the most variety per class. We will examine if larger variety per class will show the greatest error when we train the neural network. 
 ![breeds per class classification image](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/breeds_per_class.png)
 
 ## Data Augmentation
@@ -38,5 +38,7 @@ After classifying the breeds into super breeds we were left with 8 breeds classe
     
 This function set the input mean to 0 over the dataset, normalized the data by dividing by the input std, has a 20° range for random rotations, specified a range of 20% of the pixels to be shifted by width and by height, and allows inputs to be randomly flipped horizontally. 
 
+## Final Data Used
+After the EDA results it was concluded that data augmentation would not be used for the models. 
 
 
