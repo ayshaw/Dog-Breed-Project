@@ -25,9 +25,12 @@ A CNN or Convolutional Neural Network is a type of deep learning that is commonl
 Baseline model description: 
 
 
+The model 
+![]
+
 Edited baseline model description:
 
-
+![Edited baseline model description](baseline_edits_model.png "Edited Baseline Model")
 
 ResNet50
 ----------
