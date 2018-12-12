@@ -4,10 +4,15 @@ Preprocessing Data, Explored Models and Performance
 Preprocessing Data
 ------------
 Steps taken: 
-1. Cropped all dog pictures with respect with annotation from Stanford Dog Dataset. Annotation shed bounds of dog location in the image. 
-
-2. Took largest dimension and resized the image such that that dimension was 250x250.
-Resized images to 250x250 and adding padding 
+1. grouped the breeds into 10 breed classes
+2. Created a dataframe that stored all image annotations (Annotation had image bounds of dog within image), image locations, test or train (taken from Stanford dogs dataset website), classification of breed and breed class (American Kennel Club)
+3. Cropped all dog pictures with respect with annotation.
+4. Resized the image (keeping aspect ratio) so largest dimension (width or height) is 250 pixels long. Added padding such that the image size would be 250x250 pixels for all images. Saved out images into folder called Images_scaled that had the same file structure as Images (each folder represents a breed)
+5. Looped through dataframe in step 1 to generate image arrays (1000 images each) and save them out into npy files (did this to minimize ram usage)
+6. combined all scaled images into one x_train array
+7. divded the x_train,x_test array by 255 when we realized that relu was meant for values from 0 to 1. Switched to float16 to prevent RAM overflow.
+8. Changed previous BGR to RGB using cv2 package
+9. made y_test,y_train by putting their 10 classes to categorical
 
 
 
