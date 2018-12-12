@@ -1,5 +1,5 @@
-Explored Models
-=================
+Explored Models and Results
+=============================
 We explored various neural network modifications for this dog breed classifcation project. 
 
 
@@ -10,7 +10,7 @@ A CNN or Convolutional Neural Network is a type of deep learning that is commonl
 The CNN model that we used for our project had the following layers: 
 
 
-From this model we were able to get the the following results: 
+
 
 
 ResNet50
@@ -21,20 +21,23 @@ For this project we specifically looked at ResNET (Residual Neural Network) for 
 Description of ResNET model: 
 
 
-From this model we were able to get the the following results:
 
 
+
+
+Results
+--------
 
 The table below shows the models used for this project and the results on the train and test sets. 
 
-**Model Description**       **Train Set Accuracy**       **Test Set Accuracy**
+**Model**                   **Train Set Accuracy**       **Test Set Accuracy**
 ---------------------       ----------------------       ----------------------
 
 
 
 
-Reference:
-He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).
+*Reference:
+He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).*
 
 
 
