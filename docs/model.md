@@ -30,7 +30,7 @@ The model
 
 Edited baseline model description:
 
-![Edited baseline model description](baseline_edits_model.png "Edited Baseline Model")
+![Edited baseline model description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_model.png "Edited Baseline Model")
 
 ResNet50
 ----------
@@ -51,11 +51,14 @@ The table below shows the models used for this project and the results on the tr
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
 |--------------------|-----------------------|---------------------|
-|Baseline   |    kjbljbljbjbkjbljbbjlllllpo |  kknndndjndjnvjfnvfjnvfjnvfj|
-|Edited Baseline|    |   |
+|Baseline   |    | |
+|Edited Baseline|  0.3255  |  0.2375 |
 | ResNET |           |    |
 
 
+The 
+
+![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
 
 
 
