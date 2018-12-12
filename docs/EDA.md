@@ -11,7 +11,7 @@ The following plot shows the distribution of image size ratio (height/width). Th
 ![breed class classification image](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/distribution_size.png)
 
 We examine the diversity of breeds per breed class. A high breed diversity in a breed class can complicate the classification because the neural net has to find similarities throughout a wide range of breeds in that class. Besides FSS and NAN, the breeds all share some traits that group it into an AKC breed class. [] has the most variety per class we want to examine if when we train our Neural Network, if it will also show the greatest error.
-![breeds per class classification image](https://drive.google.com/file/d/10H8Ne4oqhXgQdRCCbWJfJmPMy-4B2FOX/view)
+![breeds per class classification image](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/breeds_per_class.png)
 
 ## Possible solutions
 To get more images per class, we use breed classes instead of breeds to classify our dogs, leaving us with 8 breed classes and at least 700 dogs per class. These breed classes correspond to the the [American Kennel Club breeding classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/)
