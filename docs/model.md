@@ -1,15 +1,23 @@
-Explored Models and Performance
+Preprocessing Data, Explored Models and Performance
 =============================
-We explored various neural network modifications for this dog breed classifcation project. 
 
+Preprocessing Data
+------------
+Steps taken: 
+
+
+
+
+We explored various neural network modifications for this dog breed classifcation project. 
 
 CNN 
 --------
 A CNN or Convolutional Neural Network is a type of deep learning that is commonly used for visual imagery analyzation , ideal for our dog breed classification project. This is because CNN add convolution layers that use learnable filters to find specific patterns or features from the original image. The filters are smaller but with the same number of dimensions for the image and same depth.  For example, an image is usually read as a matrix of three dimensions, and the depth of three which takes into account the 'color' channels (rbg). If we have an image of size *NXN* the read matrix by the neural network has a matrix of size *NXNX3*. This would mean that a filter from a convolution layer is a matrix of size *MXMX3* where *M < N*. Different filters detect different features in each image by sliding through all the spatial locations in the input image and creating a set of activation/feature maps as the output that goes into the next layer in the CNN. 
 
-The CNN model that we used for our project had the following layers: 
+Baseline model description: 
 
 
+Edited baseline model description:
 
 
 
@@ -32,7 +40,12 @@ The table below shows the models used for this project and the results on the tr
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
 |--------------------|-----------------------|---------------------|
-|id;nvkfnvlkfnkjjbjblbj  |    kjbljbljbjbkjbljbbjlllllpo |  kknndndjndjnvjfnvfjnvfjnvfj|
+|Baseline   |    kjbljbljbjbkjbljbbjlllllpo |  kknndndjndjnvjfnvfjnvfjnvfj|
+|Edited Baseline|    |   |
+| ResNET |           |    |
+
+
+
 
 
 
