@@ -30,9 +30,9 @@ Results
 
 The table below shows the models used for this project and the results on the train and test sets. 
 
-**Model**                   **Train Set Accuracy**       **Test Set Accuracy**
----------------------       ----------------------       ----------------------
-id;nvkfnvlkfnkjjbjblbj      kjbljbljbjbkjbljbbjlllllpo   kknndndjndjnvjfnvfjnvfjnvfj
+|**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
+|--------------------|-----------------------|---------------------|
+|id;nvkfnvlkfnkjjbjblbj  |    kjbljbljbjbkjbljbbjlllllpo |  kknndndjndjnvjfnvfjnvfjnvfj|
 
 
 
