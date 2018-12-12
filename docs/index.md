@@ -16,7 +16,16 @@ Because the database only contains 20,580 images, it only provides ~150-200 imag
 
 <br>[click here for more about EDA and Data Augmentation](EDA.md)
 
-## Model Specifications and Performance
+## Preprocessing Steps, Model Specifications and Performance
 We explored multiple models for the classification of the 8 American Kennel Club breeds. The type of neural network models were tested with the datasets were convolutional neural networks (CNN) and residual neural networks (ResNET). 
 
-<br>[click here for more about the models and results](model.md)
+<br>[click here for more about the prepocessing steps, models and performance](model.md)
+
+## Python code
+The links to the python code are the following:
+[EDA]
+[Test/Train sets generator]
+[Baseline Model]
+[Edited Baseline Model]
+[RestNET Model]
+
