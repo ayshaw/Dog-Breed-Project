@@ -1,4 +1,4 @@
-Explored Models and Results
+Explored Models and Performance
 =============================
 We explored various neural network modifications for this dog breed classifcation project. 
 
@@ -25,7 +25,7 @@ Description of ResNET model:
 
 
 
-Results
+Performance
 --------
 
 The table below shows the models used for this project and the results on the train and test sets. 
