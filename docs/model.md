@@ -4,7 +4,7 @@ Preprocessing Data, Explored Models and Performance
 Preprocessing Data
 ------------
 Steps taken: 
-1. grouped the breeds into 10 breed classes
+1. Grouped the breeds into 10 breed classes
 2. Created a dataframe that stored all image annotations (Annotation had image bounds of dog within image), image locations, test or train (taken from Stanford dogs dataset website), classification of breed and breed class (American Kennel Club)
 3. Cropped all dog pictures with respect with annotation.
 4. Resized the image (keeping aspect ratio) so largest dimension (width or height) is 250 pixels long. Added padding such that the image size would be 250x250 pixels for all images. Saved out images into folder called Images_scaled that had the same file structure as Images (each folder represents a breed)
@@ -56,7 +56,7 @@ The table below shows the models used for this project and the results on the tr
 | ResNET |           |    |
 
 
-The 
+The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets.
 
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
 
