@@ -37,7 +37,7 @@ For this project we specifically looked at ResNET (Residual Neural Network) for 
 Models and Performance
 --------
 
-The table below shows the models used for this project and the results on the train and test sets. 
+The table below shows the models used for this project and the results on the train and test sets. These were evaluated using model.evaluate(x,y).
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
 |--------------------|-----------------------|---------------------|
