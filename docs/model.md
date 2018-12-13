@@ -45,8 +45,7 @@ The table below shows the models used for this project and the results on the tr
 ## Baseline Model
 ### Epochs: 15, Learning Rate: 0.1, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2
 ![Edited baseline model 2 description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v2.png "Edited Baseline Model 2")
-This model took ~40 minutes to compile. It has 15 epochs 
-
+This model took ~40 minutes to fit. The loss did not converge, the epoch accuracies were also constant through the 15 epochs. This was later determined to be the coarse learning rate of 0.1 (Edited Baseline Model version 1). We later optimized the baseline model in in two different versions:
 
 ## Edited Baseline Model version 1
 ### Epochs: 15, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2
