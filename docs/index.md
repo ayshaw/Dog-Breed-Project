@@ -27,9 +27,7 @@ The model that performed the best on the dataset was the      model.
 
 ## Python code
 The links to the python code are the following:
-[EDA]
-[Test/Train sets generator]
-[Baseline Model]
-[Edited Baseline Model]
-[RestNET Model]
+[EDA and models]
+[More models]
+
 
