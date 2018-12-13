@@ -56,7 +56,10 @@ The training and validation accuracy versus epochs are shown in the figure below
 
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
 
+The loss and accuracy is not plateauing off so increasing the epochs would benefit this model. We wanted to show how fast the model could fit compared to the baseline so we kept the epochs at 15.
+
 ## Edited Baseline Model version 2
+This model was not changed structurally from the baseline. The layers were kept the same as the baseline, but the learning rate was decreased from 0.1 to 0.01. The epochs were also decreased from 15 to 10 because it was overfitting after 10 epochs.
 
 ![Edited baseline model 2 description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v2.png "Edited Baseline Model 2")
 
