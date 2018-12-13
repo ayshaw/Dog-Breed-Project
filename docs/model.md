@@ -39,7 +39,7 @@ The table below shows the models used for this project and the results on the tr
 |--------------------|-----------------------|---------------------|
 |Baseline   |    | |
 |Edited Baseline version 1|  0.3255  |  0.2375 |
-|Edited Baseline version 2|          ||
+|Edited Baseline version 2| 0.9305|0.2286|
 | ResNET |           |    |
 
 ## Baseline Model
@@ -63,7 +63,7 @@ The loss and accuracy is not plateauing off so increasing the epochs would benef
 
 ## Edited Baseline Model version 2
 ### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2
-This model was not changed structurally from the baseline (summary for baseline is kept). The layers were kept the same as the baseline, but the learning rate was decreased from 0.1 to 0.01. The epochs were also decreased from 15 to 10 because it was overfitting after 10 epochs.
+This model was not changed structurally from the baseline (summary for baseline is kept). The layers were kept the same as the baseline, but the learning rate was decreased from 0.1 to 0.01. The epochs were also decreased from 15 to 10 because it was overfitting after 10 epochs. It is apparent that the first edited version was much better and reduced overfitting. 
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v2_plot.png "Edited Baseline results")
 
 
