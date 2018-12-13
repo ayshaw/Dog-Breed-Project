@@ -41,10 +41,10 @@ The table below shows the models used for this project and the results on the tr
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
 |--------------------|-----------------------|---------------------|
-|Baseline   |0.7093 |0.1949 |
-|Edited Baseline version 1|  0.3255  |  0.2375 |
-|Edited Baseline version 2|.7093|0.2286|
-|Edited Baseline version 3| 0.5185|0.2537 |
+|CNN Baseline   |0.7093 |0.1949 |
+|CNN Edited Baseline version 1|  0.3255  |  0.2375 |
+|CNN Edited Baseline version 2|.7093|0.2286|
+|CNN Edited Baseline version 3| 0.5185|0.2537 |
 | ResNET |       0.1615    |  0.1851 |
 
 ## Baseline Model
