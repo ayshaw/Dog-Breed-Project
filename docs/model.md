@@ -41,9 +41,10 @@ The table below shows the models used for this project and the results on the tr
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
 |--------------------|-----------------------|---------------------|
-|Baseline   |    | |
+|Baseline   | | |
 |Edited Baseline version 1|  0.3255  |  0.2375 |
 |Edited Baseline version 2| 0.9305|0.2286|
+|Edited Baseline version 3| 0.5185|0.25372960372960374 |
 | ResNET |           |    |
 
 ## Baseline Model
@@ -69,6 +70,8 @@ The loss and accuracy is not plateauing off so increasing the epochs would benef
 ### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 67,401,514
 This model was not changed structurally from the baseline (summary for baseline is kept). It still has the 67 million+ parameters that leads to overfitting. The layers were kept the same as the baseline, but the learning rate was decreased from 0.1 to 0.01. The epochs were also decreased from 15 to 10 because it was overfitting after 10 epochs. It is apparent that the first edited version was much better and reduced overfitting than this version. The high contrast between train and test accuracy elucidates this.
 
-
+## Edited Baseline Model version 3
+### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 812,010
+This model was not changed structurally from the baseline_edits_v1.  The epochs were increased to 20 because it seemed like the previous baseline model v1 did not converge to a plateau. The final dropout before the final dense output layer is more aggressive at 30% dropout. The other dropout layer was kept the same. Judging from the plot of loss and accuracy, more epochs would possibly help the model fitting converge (similar to baseline model version 3). Other Learning Rates were experimented but they did not converge fast enough, additionally the loss for validation and train decreased monotonically implying that the learning rate was not too aggressive.
 
 
