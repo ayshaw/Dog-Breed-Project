@@ -29,6 +29,6 @@ The model that performed the best on the dataset was the      model.
 The links to the python code are the following:
 [Link to EDA and models](https://colab.research.google.com/drive/1i-o0uGAw5J14S-YspWRkP03y8atL0PuB#scrollTo=XqmCsMSPNfAV)
 [Link to more models](https://colab.research.google.com/drive/1NhZgQYb2PmsmxmsttIFuMTyc_ZMthEkH)
-[Link to train and set generator] (https://colab.research.google.com/drive/1hUPKcDNrKw1nx6gtCJLM2x6GH4MF_o67)
+[Link to train and set generator](https://colab.research.google.com/drive/1hUPKcDNrKw1nx6gtCJLM2x6GH4MF_o67)
 
 
