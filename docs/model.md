@@ -80,4 +80,4 @@ This model was not changed structurally from the baseline_edits_v1.  The epochs 
 ### Epochs: 8, Learning Rate: 0.000001, Batch Size: 24, Optimizer: Adam, Loss: categorical_crossentropy, validation split: 0.1, parameters: 23608202 non trainable, 20490 trainable
 We reduce the validation split to increase the training set. The learning rate is kept low to prevent the loss from jumping up and down, previous aggressive learning rates had non-monotonic loss. 
 
-
+![Resnet results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/resnet_plot.jpeg "Resnet results")
