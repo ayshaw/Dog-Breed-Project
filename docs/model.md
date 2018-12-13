@@ -57,13 +57,14 @@ The parameters are reduced to 812,000 and the training time is 15 minutes instea
 
 The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets.
 
-![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/accuracy_cal.png "Edited Baseline results")
+![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1_plot.png "Edited Baseline results")
 
 The loss and accuracy is not plateauing off so increasing the epochs would benefit this model. We wanted to show how fast the model could fit compared to the baseline so we kept the epochs at 15.
 
 ## Edited Baseline Model version 2
 ### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2
 This model was not changed structurally from the baseline (summary for baseline is kept). The layers were kept the same as the baseline, but the learning rate was decreased from 0.1 to 0.01. The epochs were also decreased from 15 to 10 because it was overfitting after 10 epochs.
+![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v2_plot.png "Edited Baseline results")
 
 
 
