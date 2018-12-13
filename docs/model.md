@@ -12,7 +12,8 @@ Steps taken:
 6. Combined all scaled images into one x_train array.
 7. Divided the x_train,x_test array by 255 when we realized that relu was meant for values from 0 to 1. Switched to float16 to prevent RAM overflow.
 8. Changed previous BGR to RGB using cv2 package. The images below show how the images looked before editing the images that were in the BGR format and after editing them to RGB. 
-<img src="https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/brg.jpeg" alt="drawing" style="width:200px;"/>!<img src="https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/rbg.jpeg" alt="drawing" style="width:200px;"/>![BGR description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/brg.jpeg "BGR") ![RGB description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/rbg.jpeg "RBG")
+
+<img src="https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/brg.jpeg" alt="drawing"  width="200"/>!<img src="https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/rbg.jpeg" alt="drawing"  width="200"/>
 
 
 9. Made y_test,y_train by putting their 10 classes to categorical.
