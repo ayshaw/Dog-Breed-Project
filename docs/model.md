@@ -62,7 +62,7 @@ The parameters are reduced to 812,000 and the training time is 15 minutes instea
 
 The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets. The solid lines corresponds to the accuracy results on the left y-axis and the dotted lines correspond to the loss results on the right y-axis. 
 
-![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1_plot.png "Edited Baseline results")
+![Edited baseline v1 results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1_plot.png "Edited Baseline v1 results")
 
 The loss and accuracy is not plateauing off so increasing the epochs would benefit this model. We wanted to show how fast the model could fit compared to the baseline so we kept the epochs at 15. 
 
@@ -74,4 +74,4 @@ This model was not changed structurally from the baseline (summary for baseline 
 ### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 812,010
 This model was not changed structurally from the baseline_edits_v1.  The epochs were increased to 20 because it seemed like the previous baseline model v1 did not converge to a plateau. The final dropout before the final dense output layer is more aggressive at 30% dropout. The other dropout layer was kept the same. Judging from the plot of loss and accuracy, more epochs would possibly help the model fitting converge (similar to baseline model version 3). Other Learning Rates were experimented but they did not converge fast enough, additionally the loss for validation and train decreased monotonically implying that the learning rate was not too aggressive.
 
-
+![Edited baseline v3 results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v3_plot.jpeg "Edited Baseline v3 results")
