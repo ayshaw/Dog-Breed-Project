@@ -43,7 +43,7 @@ The table below shows the models used for this project and the results on the tr
 |--------------------|-----------------------|---------------------|
 |Baseline   |0.7093 |0.1949 |
 |Edited Baseline version 1|  0.3255  |  0.2375 |
-|Edited Baseline version 2| 0.9305|0.2286|
+|Edited Baseline version 2|.7093|0.2286|
 |Edited Baseline version 3| 0.5185|0.2537 |
 | ResNET |       0.1615    |  0.1851 |
 
