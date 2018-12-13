@@ -45,7 +45,7 @@ The table below shows the models used for this project and the results on the tr
 |Edited Baseline version 1|  0.3255  |  0.2375 |
 |Edited Baseline version 2| 0.9305|0.2286|
 |Edited Baseline version 3| 0.5185|0.2537 |
-| ResNET |       0.1615    |    |
+| ResNET |       0.1615    |  0.1851 |
 
 ## Baseline Model
 ### Epochs: 15, Learning Rate: 0.1, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2
@@ -81,3 +81,5 @@ This model was not changed structurally from the baseline_edits_v1.  The epochs 
 We reduce the validation split to increase the training set. The learning rate is kept low to prevent the loss from jumping up and down, previous aggressive learning rates had non-monotonic loss. 
 
 ![Resnet results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/resnet_plot.jpeg "Resnet results")
+
+The validation does not show improvement. This is likely either to be poor fitting or the small size of the validation set is might make it hard to represent using the model. Data Augmentation will be able to improve the model, we would have to change our fit to a fit generator which would flow the images in from the directory without using up RAM. A dropout layer of 0.3 was added right before the final dense layer to prevent overfitting. Judging from the higher test accuracy than train accuracy, the biggest issue was not overfitting. 
