@@ -75,3 +75,9 @@ This model was not changed structurally from the baseline (summary for baseline 
 This model was not changed structurally from the baseline_edits_v1.  The epochs were increased to 20 because it seemed like the previous baseline model v1 did not converge to a plateau. The final dropout before the final dense output layer is more aggressive at 30% dropout. The other dropout layer was kept the same. Judging from the plot of loss and accuracy, more epochs would possibly help the model fitting converge (similar to baseline model version 3). Other Learning Rates were experimented but they did not converge fast enough, additionally the loss for validation and train decreased monotonically implying that the learning rate was not too aggressive.
 
 ![Edited baseline v3 results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v3_plot.jpeg "Edited Baseline v3 results")
+
+## Resnet Model 
+### Epochs: 8, Learning Rate: 0.000001, Batch Size: 24, Optimizer: Adam, Loss: categorical_crossentropy, validation split: 0.1, parameters: 23608202 non trainable, 20490 trainable
+We reduce the validation split to increase the training set. The learning rate is kept low to prevent the loss from jumping up and down, previous aggressive learning rates had non-monotonic loss. 
+
+
