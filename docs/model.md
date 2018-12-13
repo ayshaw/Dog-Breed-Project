@@ -58,7 +58,6 @@ The training and validation accuracy versus epochs are shown in the figure below
 
 ## Edited Baseline Model version 2
 
-
 ![Edited baseline model 2 description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v2.png "Edited Baseline Model 2")
 
 
