@@ -54,11 +54,11 @@ This model took ~40 minutes to fit. The loss did not converge, the epoch accurac
 
 ## Edited Baseline Model version 1
 ### Epochs: 15, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 812,010
-The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node dense overfitting layer that contributed to its 40 minute training time. Additionally its learning rate was 0.1, which may have lead to the non-decrease of the loss function. I decreased the learning rate to 0.01. I further reduced the parameters by increasing the max pooling rate layers, choosing to add one in between each Conv2D layer instead of every 2 Conv2D layer.
+The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node dense overfitting layer that contributed to its 40 minute training time. Additionally its learning rate was 0.1, which may have lead to the non-decrease of the loss function. I decreased the learning rate to 0.01. I further reduced the parameters by increasing the number of max pooling layers, choosing to add one in between every one Conv2D layer instead of inbetween every two Conv2D layers.
 
 ![Edited baseline model 1 description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1.png "Edited Baseline Model 1")
 
-The parameters are reduced to 812,000 and the training time is 15 minutes instead of 30. The overtraining is greatly reduced as well. The 2 drop-out layers(dropout_4 and dropout_3) each have 20% drop-out.
+Compared to the baselin, the parameters are reduced to 812,000 and the training time is 15 minutes instead of 30. The overtraining is greatly reduced as well. The 2 drop-out layers(dropout_4 and dropout_3) each have 20% drop-out.
 
 The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets. The solid lines corresponds to the accuracy results on the left y-axis and the dotted lines correspond to the loss results on the right y-axis. 
 
