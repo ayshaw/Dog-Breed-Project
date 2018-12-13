@@ -76,8 +76,9 @@ This model was not changed structurally from the baseline_edits_v1.  The epochs 
 
 ![Edited baseline v3 results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v3_plot.jpeg "Edited Baseline v3 results")
 
-## Resnet Model 
+## ResNet Model 
 ### Epochs: 8, Learning Rate: 0.000001, Batch Size: 24, Optimizer: Adam, Loss: categorical_crossentropy, validation split: 0.1, parameters: 23608202 non trainable, 20490 trainable
+The ResNet model is pretrained on imagenet. The optional pooling mode for feature extraction applies global average pooling to the output of the last convolutional layer, meaning that the output would be a 2D tensor.
 We reduce the validation split to increase the training set. The learning rate is kept low to prevent the loss from jumping up and down, previous aggressive learning rates had non-monotonic loss. 
 
 ![Resnet results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/resnet_plot.jpeg "Resnet results")
