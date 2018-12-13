@@ -58,7 +58,7 @@ The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node 
 
 The parameters are reduced to 812,000 and the training time is 15 minutes instead of 30. The overtraining is greatly reduced as well.
 
-The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets.
+The training and validation accuracy versus epochs are shown in the figure below. The results show that as the number of epochs is increasing we have edited baseline cnn model decreasing in loss and increasing in accuracy with both training and test sets. The solid lines corresponds to the accuracy results on the left y-axis and the dotted lines correspond to the loss results on the right y-axis.   
 
 ![Edited baseline results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v1_plot.png "Edited Baseline results")
 
