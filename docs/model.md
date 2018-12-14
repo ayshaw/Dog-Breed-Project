@@ -38,6 +38,10 @@ ResNet50
 ----------
 For this project we specifically looked at ResNET (Residual Neural Network) for our CNN model. ResNETs are a type of deep residual learning architecture commonly used for image recognition that facilitates the training of deeper networks. We used ResNET50 found Keras, the open-source neural network library. This ResNET follows the architechture by He et al. (2015) found [here](https://arxiv.org/abs/1512.03385)
 
+VGG16
+--------
+It is a pretrained model built using: Convolutions layers (used only 3*3 size ), Max pooling layers (used only 2*2 size), Fully connected layers at end. It has total of 19 layers. 
+
 Models and Performance
 --------
 
@@ -92,3 +96,7 @@ We reduce the validation split to increase the training set. The learning rate i
 ![Resnet results](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/resnet_plot.jpeg "Resnet results")
 
 The validation does not show improvement. This can be due to poor fitting or small size of the validation set. The small validation set might have images difficult to be described by the model, no matter how trained the model might be. Data Augmentation will be able to improve the model, we would have to change our model fitting process to a fit generator which would flow the images in from the directory without using up RAM. Initial uses of ResNet had even higher overfitting tendencies and in this one, a dropout layer of 0.3 was added right before the final dense layer to prevent overfitting.  Judging from the higher test accuracy than train accuracy, the biggest issue was not overfitting but rather could have been the insufficient number of training images or difficulty classifying into such diverse breed classifications. 
+
+## VGGA16/ResNet combination
+### Epochs: 10, Batch Size: 4, Optimizer: rmsprop, Loss: categorical_crossentropy, validation split: 0.2, parameters: 1,532,682 non trainable, 2560 trainable
+This model was implemented with 1000 images that were preprocessed differently: the x_train standardized by subtracting the channel mean and dividing by the standard deviation. Then we put the preprocessed input into pretrained models (Resnet and VGG19) and use model to extract features. The 2 outputs of these 2 model outputs were each put through a model that pooled the input, put it through a global average pooling layer, dense layer, normalize layer, and relu activation layer. Then the two tensor branches from each of the models were concatenated into one and fed into a dropout (0.3), dense (640), normalization, relu activation, dropout and dense layer. 
