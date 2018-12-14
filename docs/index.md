@@ -34,5 +34,5 @@ The links to the python code are the following:
 
 [Link to train and set generator](https://colab.research.google.com/drive/1hUPKcDNrKw1nx6gtCJLM2x6GH4MF_o67)
 
-[link to VGGA-Resnet model](https://colab.research.google.com/drive/1Iw3cbdtykFKzZPXbbpC2pBFXU7NUzzuk)
+[Link to VGGA-Resnet model](https://colab.research.google.com/drive/1Iw3cbdtykFKzZPXbbpC2pBFXU7NUzzuk)
 
