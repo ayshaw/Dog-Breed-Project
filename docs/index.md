@@ -1,5 +1,5 @@
 # Introduction to Dog Breed Classification Project
-# Group #36: Eimy Bonilla, David Wei, Ada Shaw
+# Group #36: Eimy Bonilla, David Wei, Ada Shaw 
 ## Background and Motivation
 Dog Breed Classification is difficult for most humans, however correctly identifying breeds has implications to improving adoption rates (prospective dog owners may want a specific breed that can function as a family dog, an athletic dog, or potential service dog), determining dog behavior, and deciding whether the dog is even allowed to be bred/raised in a certain region (due to bans on certain dog breeds). <br>
 
@@ -36,3 +36,4 @@ The links to the python code are the following:
 
 [Link to VGGA19-Resnet model](https://colab.research.google.com/drive/1Iw3cbdtykFKzZPXbbpC2pBFXU7NUzzuk)
 
+[github](https://github.com/ayshaw/Dog-Breed-Project/graphs/contributors)
