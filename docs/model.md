@@ -10,6 +10,7 @@ Steps taken:
 4. Resized the image (keeping aspect ratio) so largest dimension (width or height) is 250 pixels long. Added padding such that the image size would be 250x250 pixels for all imagesand saved out images into folder called Images_scaled that had the same file structure as Images. Each folder representing a different breed.
 5. Looped through dataframe in step 1 to generate image arrays (1000 images each) and save them out into npy files (did this to minimize ram usage).
 6. Combined all scaled images into one x_train array.
+7. Used keras.utils.to_categorical to turn the y_train, y_test into one_hot_encoding binary arrays.
 7. Divided the x_train,x_test array by 255 when we realized that relu was meant for values from 0 to 1. Switched to float16 to prevent RAM overflow.
 8. Changed previous BGR to RGB using cv2 package. The images below show how the images looked before editing the images that were in the BGR format and after editing them to RGB. 
 
@@ -21,6 +22,9 @@ Steps taken:
 
 
 We explored various neural network modifications for this dog breed classifcation project. 
+Logistic Regression
+--------
+A model with one flatten and one dense layer was evaluated to compare how our CNN's and ResNets would compare to a simple logistical regresssion that would take in each image and output a classification result.
 
 CNN 
 --------
@@ -41,18 +45,22 @@ The table below shows the models used for this project and the results on the tr
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
 |--------------------|-----------------------|---------------------|
+|Logistic Regression|0.1615 |0.1851|
 |CNN Baseline   |0.7093 |0.1949 |
 |CNN Edited Baseline version 1|  0.3255  |  0.2375 |
 |CNN Edited Baseline version 2|.7093|0.2286|
 |CNN Edited Baseline version 3| 0.5185|0.2537 |
 | ResNET |       0.1615    |  0.1851 |
-
-## Baseline Model
-### Epochs: 15, Learning Rate: 0.1, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2
+## Logistic Regression
+### Epochs: 10, Learning Rate: 0.001, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, Parameters:1,875,010
+![logreg](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/logreg.png)
+Our Logistic Regression Model performed as well as the ResNet Model but it was worse than our CNN models. It provides a good comparison on how much of the models below are over-complicated to the point where they do not improve the model performance.
+## Baseline Model (CNN)
+### Epochs: 15, Learning Rate: 0.1, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2,parameters: 67,401,514
 ![Edited baseline description](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/baseline_edits_v2.png "Edited Baseline")
 This model took ~40 minutes to fit. The loss did not converge, the epoch accuracies were also constant through the 15 epochs. This was later determined to be the coarse learning rate of 0.1 (Edited Baseline Model version 1). We later optimized the baseline model in in two different versions:
 
-## Edited Baseline Model version 1
+## Edited Baseline Model version 1 (CNN)
 ### Epochs: 15, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 812,010
 The Baseline CNN had over 67 million parameters , mostly exacerbated a 512 node dense overfitting layer that contributed to its 40 minute training time. Additionally its learning rate was 0.1, which may have lead to the non-decrease of the loss function. I decreased the learning rate to 0.01. I further reduced the parameters by increasing the number of max pooling layers, choosing to add one in between every one Conv2D layer instead of inbetween every two Conv2D layers.
 
@@ -66,11 +74,11 @@ The training and validation accuracy versus epochs are shown in the figure below
 
 The loss and accuracy is not plateauing off so increasing the epochs would benefit this model. We wanted to show how fast the model could fit compared to the baseline so we kept the epochs at 15. 
 
-## Edited Baseline Model version 2
+## Edited Baseline Model version 2 (CNN)
 ### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 67,401,514
 This model was not changed structurally from the baseline (summary for baseline is kept). It still has the 67 million+ parameters that leads to overfitting. The layers were kept the same as the baseline, but the learning rate was decreased from 0.1 to 0.01. The epochs were also decreased from 15 to 10 because it was overfitting after 10 epochs. It is apparent that the first edited version was much better and reduced overfitting than this version. The high contrast between train and test accuracy elucidates this.
 
-## Edited Baseline Model version 3
+## Edited Baseline Model version 3 (CNN)
 ### Epochs: 10, Learning Rate: 0.01, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, parameters: 812,010
 This model was not changed structurally from the baseline_edits_v1.  The epochs were increased to 20 because it seemed like the previous baseline model v1 did not converge to a plateau. The final dropout before the final dense output layer is more aggressive at 30% dropout. The other dropout layer was kept the same. Judging from the plot of loss and accuracy, more epochs would possibly help the model fitting converge (similar to baseline model version 3). Other Learning Rates were experimented but they did not converge fast enough, additionally the loss for validation and train decreased monotonically implying that the learning rate was not too aggressive.
 
