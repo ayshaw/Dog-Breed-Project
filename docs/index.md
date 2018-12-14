@@ -22,7 +22,7 @@ We explored multiple models for the classification of the 8 American Kennel Club
 <br>[click here for more about the prepocessing steps, models and performance](model.md)
 
 ## Conclusions
-The model that performed the best on the dataset was the CNN baseline model version 3. This model gave us an test accuracy of 25%. This accuracy is still much lower than we expected. We believe that the low accuracy results could be from having 10 breeds instead of 8 breeds. Some of the images in the NAN and Hybrid breeds could be similar to other classes in the super breeds (there are no traits that they have in common other than not being able to be classified). We were not able to do data augmentation as we wanted to do for this project due to RAM storage constraints and we could use flow_from_directory in the future. 
+The model that performed the best on the dataset was the CNN baseline model version 3. This model gave us an test accuracy of 25%. This accuracy is still much lower than we expected. We believe that the low accuracy results could be from having 10 breeds instead of 8 breeds. Some of the images in the NAN and Hybrid breeds could be similar to other classes in the super breeds (there are no traits that they have in common other than not being able to be classified). We were not able to do data augmentation as we wanted to do for this project due to RAM storage constraints and we could use flow_from_directory in the future. [hm](https://github.com/ayshaw/Dog-Breed-Project/graphs/contributors)
 
 
 ## Python code
@@ -35,5 +35,3 @@ The links to the python code are the following:
 [Link to train and set generator](https://colab.research.google.com/drive/1hUPKcDNrKw1nx6gtCJLM2x6GH4MF_o67)
 
 [Link to VGGA19-Resnet model](https://colab.research.google.com/drive/1Iw3cbdtykFKzZPXbbpC2pBFXU7NUzzuk)
-
-[github](https://github.com/ayshaw/Dog-Breed-Project/graphs/contributors)
