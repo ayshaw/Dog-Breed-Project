@@ -40,7 +40,8 @@ For this project we specifically looked at ResNET (Residual Neural Network) for 
 
 VGG16
 --------
-It is a pretrained model built using: Convolutions layers (used only 3*3 size ), Max pooling layers (used only 2*2 size), Fully connected layers at end. It has total of 19 layers. 
+It is a pretrained imagenet model built using: Convolutions layers (used only 3*3 size ), Max pooling layers (used only 2*2 size), Fully connected layers at end. It has total of 19 layers. Below is a link about a mathworks implementation on vgg19 for more information.
+[link on vgg19](https://uk.mathworks.com/help/deeplearning/ref/vgg19.html)
 
 Models and Performance
 --------
@@ -55,6 +56,7 @@ The table below shows the models used for this project and the results on the tr
 |CNN Edited Baseline version 2|.7093|0.2286|
 |CNN Edited Baseline version 3| 0.5185|0.2537 |
 | ResNET |       0.1615    |  0.1851 |
+|VGG19 and Resnet|0.948|0.2076|
 ## Logistic Regression
 ### Epochs: 10, Learning Rate: 0.001, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, Parameters:1,875,010
 ![logreg](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/logreg.png)
@@ -100,3 +102,6 @@ The validation does not show improvement. This can be due to poor fitting or sma
 ## VGGA16/ResNet combination
 ### Epochs: 10, Batch Size: 4, Optimizer: rmsprop, Loss: categorical_crossentropy, validation split: 0.2, parameters: 1,532,682 non trainable, 2560 trainable
 This model was implemented with 1000 images that were preprocessed differently: the x_train standardized by subtracting the channel mean and dividing by the standard deviation. Then we put the preprocessed input into pretrained models (Resnet and VGG19) and use model to extract features. The 2 outputs of these 2 model outputs were each put through a model that pooled the input, put it through a global average pooling layer, dense layer, normalize layer, and relu activation layer. Then the two tensor branches from each of the models were concatenated into one and fed into a dropout (0.3), dense (640), normalization, relu activation, dropout and dense layer. 
+The model structure is below
+![resnet_vgga19](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/vgg19_resnet.png)
+It is poor compared to the CNN model and does not improve significantly upon the logistic model. The code for this model is here: [colab link to model](https://colab.research.google.com/drive/1Iw3cbdtykFKzZPXbbpC2pBFXU7NUzzuk)
