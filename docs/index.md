@@ -1,7 +1,7 @@
 # Introduction to Dog Breed Classification Project
 # Group #36: Eimy Bonilla, David Wei, Ada Shaw 
 ## Background and Motivation
-Dog Breed Classification is difficult for most humans, however correctly identifying breeds has implications to improving adoption rates (prospective dog owners may want a specific breed that can function as a family dog, an athletic dog, or potential service dog), determining dog behavior, and deciding whether the dog is even allowed to be bred/raised in a certain region (due to bans on certain dog breeds). <br>
+Dog Breed Classification is difficult for most humans, however correctly identifying breeds has implications to improving adoption rates (prospective dog owners may want a specific breed that can function as a family dog, an athletic dog, or potential service dog), determining dog behavior, and deciding whether the dog is even allowed to be bred/raised in a certain region (due to bans on certain dog breeds). </br>
 
 
 ## Problem Statement and Project Goals
@@ -22,7 +22,10 @@ We explored multiple models for the classification of the 8 American Kennel Club
 <br>[click here for more about the prepocessing steps, models and performance](model.md)
 
 ## Conclusions and Next Steps Forward
-We experimented with Image trained ResNet's, CNN's, and ANN's and the model that performed the best on the dataset was the CNN baseline model version 3 (see model page for specifications). This model gave us an test accuracy of 25%. This accuracy is still much lower than we expected. We believe that the low accuracy results could be from the two extra NAN and hybrid breed categories instead of 8 breeds. Some of the images in the NAN and Hybrid breeds could be similar to other classes in the super breeds (there are no traits that they have in common other than not being able to be classified). These two extra categories likely confused the neural network categorization of breed classes. Additionally, the differences within the AKC breed classes might make categorizing difficult therefore experimentation with predicting the 120 breeds rather than 10 breed classes might be more successful. 
+We experimented with Image trained ResNet's, CNN's, and ANN's and the model that performed the best on the dataset was the CNN baseline model version 3 (see model page for specifications). This model gave us an test accuracy of 25%. </br>
+
+We believe that the low accuracy results could be from the two extra NAN and hybrid breed categories instead of 8 breeds. Some of the images in the NAN and Hybrid breeds could be similar to other classes in the super breeds (there are no traits that they have in common other than not being able to be classified). These two extra categories likely confused the neural network categorization of breed classes. Additionally, the differences within the AKC breed classes might make categorizing difficult therefore experimentation with predicting the 120 breeds rather than 10 breed classes might be more successful. </br>
+
 We were not able to do data augmentation as we wanted to do for this project due to RAM storage constraints (Google Colab GPU's have 16 GB of RAM) and we could use keras [flow_from_directory](https://medium.com/@vijayabhaskar96/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720) in the future such that memory is not stored in RAM but in long term memory. 
 
 
