@@ -12,17 +12,19 @@ We will do this by using a training set of 20,580 dogs of 120 breeds in the [Sta
 
 ### Exploratory Data Analysis
 The images come in different shapes and can be color or black and white. We reshape the images to be 250x250 pixels, because some of the models need consistent image size. For certain images, compressing or expanding some of the images to fit the 250x250 pixels leads to loss of features we need to classify the dogs by breeds. <br>
-Because the database only contains 20,580 images, it only provides ~150-200 images per breed. We explore data augmentation techniques and different classification techniques. Because of the low amount of images per breed and thus possibly insufficient data for effective training, we decided to coagulate [120 breeds into 8 American Kennel Club breed classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/). 
+Because the database only contains 20,580 images, it only provides ~150-200 images per breed. We explore data augmentation techniques and different classification techniques. Because of the low amount of images per breed and thus possibly insufficient data for effective training, we decided to coagulate [120 breeds into 10 American Kennel Club breed classes](https://www.akc.org/public-education/resources/general-tips-information/dog-breeds-sorted-groups/). 
 
 <br>[click here for more about EDA and Data Augmentation](EDA.md)
 
 ## Preprocessing Steps, Model Specifications and Performance
-We explored multiple models for the classification of the 8 American Kennel Club breeds. The type of neural network models were tested with the datasets were convolutional neural networks (CNN) and residual neural networks (ResNET). 
+We explored multiple models for the classification of the 8 American Kennel Club breeds + hybrid and NAN. The type of neural network models were tested with the datasets were convolutional neural networks (CNN) and residual neural networks (ResNET). 
 
 <br>[click here for more about the prepocessing steps, models and performance](model.md)
 
-## Conclusions
-The model that performed the best on the dataset was the CNN baseline model version 3. This model gave us an test accuracy of 25%. This accuracy is still much lower than we expected. We believe that the low accuracy results could be from having 10 breeds instead of 8 breeds. Some of the images in the NAN and Hybrid breeds could be similar to other classes in the super breeds (there are no traits that they have in common other than not being able to be classified). We were not able to do data augmentation as we wanted to do for this project due to RAM storage constraints and we could use flow_from_directory in the future[.](https://github.com/ayshaw/Dog-Breed-Project/graphs/contributors)
+## Conclusions and Next Steps Forward
+We experimented with Image trained ResNet's, CNN's, and ANN's and the model that performed the best on the dataset was the CNN baseline model version 3 (see model page for specifications). This model gave us an test accuracy of 25%. This accuracy is still much lower than we expected. We believe that the low accuracy results could be from the two extra NAN and hybrid breed categories instead of 8 breeds. Some of the images in the NAN and Hybrid breeds could be similar to other classes in the super breeds (there are no traits that they have in common other than not being able to be classified). These two extra categories likely confused the neural network categorization of breed classes. Additionally, the differences within the AKC breed classes might make categorizing difficult therefore experimentation with predicting the 120 breeds rather than 10 breed classes might be more successful. 
+We were not able to do data augmentation as we wanted to do for this project due to RAM storage constraints (Google Colab GPU's have 16 GB of RAM) and we could use keras [flow_from_directory](https://medium.com/@vijayabhaskar96/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720) in the future such that memory is not stored in RAM but in long term memory. 
+
 
 
 ## Python code
