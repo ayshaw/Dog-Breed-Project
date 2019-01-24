@@ -49,7 +49,7 @@ Models and Performance
 The table below shows the models used for this project and the results on the train and test sets. These were evaluated using model.evaluate(x,y).
 
 |**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
-|--------------------|-----------------------|---------------------|
+|---|---|---|
 |Logistic Regression|0.1615 |0.1851|
 |CNN Baseline   |0.7093 |0.1949|
 |CNN Edited Baseline version 1|  0.3255  |  0.2375 |
