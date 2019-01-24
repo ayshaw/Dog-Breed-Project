@@ -48,7 +48,7 @@ Models and Performance
 
 The table below shows the models used for this project and the results on the train and test sets. These were evaluated using model.evaluate(x,y).
 
-|**Model**           |**Train Set Accuracy** |**Test Set Accuracy**|
+|**Model**|**Train Set Accuracy** |**Test Set Accuracy**|
 |---|---|---|
 |Logistic Regression|0.1615 |0.1851|
 |CNN Baseline   |0.7093 |0.1949|
@@ -57,6 +57,7 @@ The table below shows the models used for this project and the results on the tr
 |CNN Edited Baseline version 3| 0.5185|0.2537 |
 | ResNET |       0.1615    |  0.1851 |
 |VGG19 and Resnet|0.948|0.2076|
+
 ## Logistic Regression
 ### Epochs: 10, Learning Rate: 0.001, Batch Size: 24, Optimizer: SGD, Loss: categorical_crossentropy, validation split: 0.2, Parameters:1,875,010
 ![logreg](https://raw.githubusercontent.com/ayshaw/Dog-Breed-Project/master/logreg.png)
